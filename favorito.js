@@ -1,25 +1,30 @@
 
+function criaCartao(item, pergunta, resposta) {
+    let container = document.getElementById('flashcard')
+    let cartao = document.createElement('article')
+    cartao.className = 'cartao'
 
-function toggleFavorite(imgElement) {
-    fetch(imgElement.src) 
-        .then(response => response.text()) 
-        .then(data => { 
-            const parser = new DOMParser(); 
-            const svgDoc = parser.parseFromString(data, "image/svg+xml"); 
-            const svgElement = svgDoc.querySelector('path'); // Seleciona o elemento <path> 
-            const currentColor = svgElement.getAttribute('fill'); svgElement.setAttribute('fill', currentColor === '#FFFFFF' ? '#FF0000' : '#FFFFFF'); // Alterna a cor 
-            const serializedSvg = new XMLSerializer().serializeToString(svgElement.ownerDocument.documentElement); 
-            const svgBlob = new Blob([serializedSvg], { type: 'image/svg+xml' }); 
-            const url = URL.createObjectURL(svgBlob); 
-            imgElement.src = url;
-            
-            // Aumenta a imagem em 5% 
-            imgElement.style.transform = imgElement.style.transform === 'scale(1.15)' ? 'scale(1)' : 'scale(1.15)'; 
-    }); 
-} 
-    
-document.querySelectorAll('img[src="./img/favoritos.svg"]').forEach(img => { 
-    img.addEventListener('click', function() { 
-        toggleFavorite(this); 
-    }); 
-});
+    cartao.innerHTML = `
+    <div class="cartao__conteudo">
+        <h3>${item}</h3>
+        <div class="cartao__conteudo__pergunta">
+            <p>${pergunta}</p>
+        </div>
+        <div class="cartao__conteudo__resposta">
+            <p>${resposta}</p>
+        </div>
+    </div>
+    `
+
+    let respostaEstaVisivel = false
+
+    function viraCartao() {
+        respostaEstaVisivel = !respostaEstaVisivel
+        cartao.classList.toggle('active', respostaEstaVisivel)
+    }
+    cartao.addEventListener('click', viraCartao)
+
+
+    container.appendChild(cartao)
+
+}
