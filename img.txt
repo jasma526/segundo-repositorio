@@ -1,0 +1,45 @@
+ <div class="swiper-slide"><img src="./img/TRUFA 1.webp" alt="função seno"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 2.jpg" alt="mesa de estudo"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 3.jpeg" alt="formula de bhaskara"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 4.jpeg" alt="quadro com fórmulas"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 5.jpeg" alt="relatorio"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 6.jpeg" alt="dispositivos móveis"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 7.jpeg" alt="halloween"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 8.jpeg" alt="função seno"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 9.jpeg" alt="mesa de estudo"></div>
+                        <div class="swiper-slide"><img src="./img/TRUFA 10.jpeg" alt="formula de bhaskara"></div
+
+
+
+
+                                        <!-- Promoção - Melhor Produto -->
+                <div class="card">
+
+                    <div class="card__descricao">
+
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por... </h3>
+                            <h2 class="descricao__titulo-produto">Trufas gourmet </h2>
+                            <p class="descricao__texto"> Deliciosas trufas que derretem na boca, com sabores incriveis e deliciosos.</p>
+                        </div>
+                        
+                        <img src="./img/Captura de tela_2024-11-19_22-03-53.png" alt="Foto da promoção" class="descricao__imagem">
+
+                    </div>
+
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item">
+                                 
+                                <img id="favorito" src="./img/favoritos.svg" alt="Favoritar produto"> 
+                                
+                            </li>
+                            <li class="botoes__item"> 
+                                <img src="./img/compras.svg" alt="Adicionar no carrinho de compras">
+                            </li>
+                        </ul>
+
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+
+                    </div>
+                </div>
