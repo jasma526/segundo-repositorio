@@ -14,7 +14,7 @@ main {
     z-index: 1000;
 }
 
-.container {
+.container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,6 +112,14 @@ main {
 
 .apresenta-lista{
     display: none;
+}
+
+.opcoes__item {
+     list-style-type: none;Add commentMore actions
+        padding: 0 2em;
+        text-transform: uppercase;
+        color: var(--branco);
+        margin-bottom: 0rem;
 }
 
 
