@@ -87,43 +87,6 @@ main {
     display: none;
 }
 
-
-.menu-acessibilidade{
-    position: fixed;
-    top:3rem;
-    right:20px;
-    z-index: 1000;
-}
-
-.rotacao-botao{
-    transform: rotate(-90deg);
-    transform-origin: right center;
-}
-
-.opcoes-acessibilidade{
-    margin-top:10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
-}
-
-.apresenta-lista{
-    display: none;
-}
-
-.opcoes__item {
-     list-style-type: none;Add commentMore actions
-        padding: 0 2em;
-        text-transform: uppercase;
-        color: var(--branco);
-        margin-bottom: 0rem;
-}
-
-
-
 @media screen and (min-width: 1024px) {
     .container-titulo{
         display: block;
@@ -142,6 +105,7 @@ main {
 
     .opcoes {
         display: flex;
+        margin-bottom: 0rem;
     }
 
     .opcoes__item{
@@ -190,6 +154,7 @@ main {
 
     .container__texto {
         display: block;
+        margin-bottom: 0rem;
     }
 
 }
