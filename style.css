@@ -12,7 +12,6 @@
     --cor-branco: #ffffff;
 }
 
-
 .menu-acessibilidade{
     position: fixed;
     top:3rem;
@@ -77,3 +76,6 @@
 .alto-contraste #galeria {
     background-color: var(--cor-preto);
 }
+
+
+
